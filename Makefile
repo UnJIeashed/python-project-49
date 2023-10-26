@@ -12,3 +12,9 @@ publish: # publishing a build
 
 package-install: # installing the package
 	python3 -m pip install --user dist/*.whl
+
+package-reinstall: #reinstalling the package
+	python3 -m pip install --user dist/*.whl --force-reinstall
+
+lint: # run linter
+	poetry run flake8 brain_games
