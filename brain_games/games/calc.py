@@ -17,4 +17,3 @@ def generation(number_min, number_max):
     union = f'{first_num} {operation} {second_num}'
     correct_answer = str(calc(first_num, second_num, operation))
     return union, correct_answer
-
